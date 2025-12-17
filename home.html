@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>主页</title>
+    <style>
+        body {
+            background-image: url('主页照片.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .welcome-text {
+            font-size: 2.5em;
+            margin-bottom: 50px;
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        .navbar {
+            display: flex;
+            gap: 30px;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 15px 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.3em;
+            padding: 8px 15px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+        
+        .navbar a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+        
+        @media (max-width: 768px) {
+            .welcome-text {
+                font-size: 2em;
+            }
+            
+            .navbar {
+                flex-direction: column;
+                gap: 15px;
+                padding: 20px;
+            }
+            
+            .navbar a {
+                font-size: 1.1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="welcome-text">大家好！我们是双高胎！</div>
+    <div class="navbar">
+        <a href="works.html">作品合集</a>
+        <a href="https://www.bilibili.com/video/BV1fm7nzQExJ/?spm_id_from=333.337.search-card.all.click" target="_blank">直播录屏</a>
+        <a href="gallery1.html">高超图集</a>
+        <a href="gallery2.html">高越图集</a>
+    </div>
+</body>
+</html>
